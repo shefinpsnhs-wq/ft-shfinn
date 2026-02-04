@@ -1,0 +1,161 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ft.shfinn | Editing & Booking</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #0e0e0e;
+      color: #eaeaea;
+    }
+    header {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: radial-gradient(circle at top, #1f1f1f, #000);
+      text-align: center;
+    }
+    header h1 {
+      font-size: 3.5rem;
+      letter-spacing: 2px;
+      margin: 0;
+    }
+    header p {
+      color: #aaa;
+      margin-top: 10px;
+      font-size: 1.1rem;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 2.2rem;
+    }
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: #151515;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.6);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 0 30px rgba(255,255,255,0.08);
+    }
+    .card h3 {
+      margin-top: 0;
+    }
+    .card p {
+      color: #bbb;
+      font-size: 0.95rem;
+    }
+    .booking {
+      background: #111;
+      border-radius: 14px;
+      padding: 40px;
+      box-shadow: 0 0 25px rgba(0,0,0,0.7);
+    }
+    form {
+      display: grid;
+      gap: 15px;
+    }
+    input, textarea, select {
+      background: #1b1b1b;
+      border: none;
+      padding: 12px 15px;
+      border-radius: 8px;
+      color: #fff;
+      font-size: 0.95rem;
+    }
+    input::placeholder, textarea::placeholder {
+      color: #777;
+    }
+    button {
+      background: linear-gradient(135deg, #444, #111);
+      color: #fff;
+      border: none;
+      padding: 14px;
+      border-radius: 10px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s, transform 0.2s;
+    }
+    button:hover {
+      background: linear-gradient(135deg, #666, #222);
+      transform: scale(1.02);
+    }
+    footer {
+      text-align: center;
+      padding: 30px 10px;
+      color: #777;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>  <header>
+    <h1>ft.shfinn</h1>
+    <p>Dark Aesthetic Editing • Professional Event Works</p>
+  </header>  <section>
+    <h2>Editing Services</h2>
+    <div class="services">
+      <div class="card">
+        <h3>Wedding Work</h3>
+        <p>Cinematic wedding edits with emotional storytelling and premium color grading.</p>
+      </div>
+      <div class="card">
+        <h3>Pre-Wedding</h3>
+        <p>Stylish pre-wedding edits with creative transitions and mood-based visuals.</p>
+      </div>
+      <div class="card">
+        <h3>House Warming</h3>
+        <p>Warm and elegant edits capturing memorable moments of your new beginning.</p>
+      </div>
+      <div class="card">
+        <h3>Inauguration</h3>
+        <p>Professional edits suitable for business and ceremonial inaugurations.</p>
+      </div>
+      <div class="card">
+        <h3>Custom Edit</h3>
+        <p>Tailored edits based on your ideas, music, and personal style.</p>
+      </div>
+      <div class="card">
+        <h3>Personal Work</h3>
+        <p>Reels, personal videos, and creative edits with a dark aesthetic touch.</p>
+      </div>
+    </div>
+  </section>  <section>
+    <h2>Book Your Edit</h2>
+    <div class="booking">
+      <form>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Email Address" required />
+        <input type="tel" placeholder="Phone Number" />
+        <select required>
+          <option value="">Select Service</option>
+          <option>Wedding Work</option>
+          <option>Pre-Wedding</option>
+          <option>House Warming</option>
+          <option>Inauguration</option>
+          <option>Custom Edit</option>
+          <option>Personal Work</option>
+        </select>
+        <textarea rows="4" placeholder="Tell me about your project"></textarea>
+        <button type="submit">Send Booking Request</button>
+      </form>
+    </div>
+  </section>  <footer>
+    © 2026 ft.shfinn • Editing with passion & precision
+  </footer></body>
